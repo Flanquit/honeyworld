@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+mh-distillery.com	TRUE	/	FALSE	1999999999	PHPSESSID	b95f396c72951050af65eaa68a8390ed
+mh-distillery.com	TRUE	/	FALSE	1999999999	_wcml_booking_currency	ILS
+mh-distillery.com	TRUE	/	FALSE	1999999999	wpml_referer_url	https%3A%2F%2Fmh-distillery.com%2Fstore-category%2Fisrael%2Fcenter%2Fpage%2F3%2F
+

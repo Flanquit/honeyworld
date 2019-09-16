@@ -1,0 +1,80 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 11 Sep 2019 15:43:34 at https://mh-distillery.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://mh-distillery.com/ -O1 "C:\My Web Sites\rainboweye project1" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+15:49:28	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://mh-distillery.com/)
+15:55:12	Warning: 	Moved Permanently for mh-distillery.com/visit-our-distillery/
+15:55:12	Warning: 	File has moved from mh-distillery.com/visit-our-distillery/ to https://mh-distillery.com/tours/
+15:55:12	Warning: 	Moved Permanently for https://mh-distillery.com/?page_id=106
+15:55:12	Warning: 	File has moved from https://mh-distillery.com/?page_id=106 to https://mh-distillery.com/tours/
+15:55:47	Error: 	"Bad Request" (400) at link https://mh-distillery.com/wp-admin/admin-ajax.php (from https://mh-distillery.com/)
+15:55:47	Error: 	"Not Found" (404) at link https://mh-distillery.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmh-distillery.com%2Fhe%2F (from https://mh-distillery.com/he/)
+15:55:47	Error: 	"Not Found" (404) at link https://mh-distillery.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmh-distillery.com%2Fhe%2F&format=xml (from https://mh-distillery.com/he/)
+15:56:14	Error: 	"Error when decompressing" (-1) at link https://mh-distillery.com/he/מארזי-חג/ (from https://mh-distillery.com/he/)
+15:56:19	Error: 	"Error when decompressing" (-1) at link https://mh-distillery.com/he/products-category/קוקטיילים/ (from https://mh-distillery.com/he/)
+15:57:15	Error: 	"Error when decompressing" (-1) at link https://mh-distillery.com/he/store-category/ישראל/ (from https://mh-distillery.com/he/)
+15:57:15	Error: 	"Error when decompressing" (-1) at link https://mh-distillery.com/he/bar-category/ישראל/ (from https://mh-distillery.com/he/)
+15:57:25	Warning: 	Moved Permanently for mh-distillery.com/he/visit-our-distillery/
+15:57:25	Warning: 	File has moved from mh-distillery.com/he/visit-our-distillery/ to https://mh-distillery.com/he/tours/
+15:57:25	Warning: 	Moved Permanently for https://mh-distillery.com/he/?page_id=262
+15:57:25	Warning: 	File has moved from https://mh-distillery.com/he/?page_id=262 to https://mh-distillery.com/he/tours/
+16:00:06	Error: 	"Not Found" (404) at link mh-distillery.com/products-category/our-products/ (from https://mh-distillery.com/about/)
+16:00:06	Error: 	"Error when decompressing" (-1) at link https://mh-distillery.com/he/store-category/אירופה/ (from https://mh-distillery.com/store-category/europe/)
+16:01:00	Error: 	"Not Found" (404) at link https://mh-distillery.com/acsb.js (from https://acsbap.com/api/app/assets/js/acsb.js)
+16:01:01	Error: 	"Not Found" (404) at link https://mh-distillery.com/accessibe.js (from https://acsbap.com/api/app/assets/js/acsb.js)
+16:01:03	Error: 	"Not Found" (404) at link https://mh-distillery.com/nagishly.js (from https://acsbap.com/api/app/assets/js/acsb.js)
+16:01:03	Error: 	"Not Found" (404) at link https://mh-distillery.com/api/ (from https://acsbap.com/api/app/assets/js/acsb.js)
+16:01:03	Error: 	"Not Found" (404) at link https://mh-distillery.com/specifics/ (from https://acsbap.com/api/app/assets/js/acsb.js)
+16:01:03	Error: 	"Not Found" (404) at link https://mh-distillery.com/assets/js/acsb.js (from https://acsbap.com/api/app/assets/js/acsb.js)
+16:01:03	Error: 	"Not Found" (404) at link https://mh-distillery.com/acsb.css (from https://acsbap.com/api/app/assets/js/acsb.js)
+16:01:03	Error: 	"Not Found" (404) at link https://mh-distillery.com/accessibe.css (from https://acsbap.com/api/app/assets/js/acsb.js)
+16:01:03	Error: 	"Not Found" (404) at link https://mh-distillery.com/nagishly.css (from https://acsbap.com/api/app/assets/js/acsb.js)
+16:01:03	Error: 	"Not Found" (404) at link https://mh-distillery.com/Trident/ (from https://acsbap.com/api/app/assets/js/acsb.js)
+16:01:03	Error: 	"Not Found" (404) at link https://mh-distillery.com/assets/audio/beep.mp3 (from https://acsbap.com/api/app/assets/js/acsb.js)
+16:01:03	Error: 	"Not Found" (404) at link https://mh-distillery.com/assets/audio/error.mp3 (from https://acsbap.com/api/app/assets/js/acsb.js)
+16:01:03	Error: 	"Not Found" (404) at link https://mh-distillery.com/assets/audio/success.mp3 (from https://acsbap.com/api/app/assets/js/acsb.js)
+16:01:03	Error: 	"Not Found" (404) at link https://mh-distillery.com/wp-content/themes/anova/assets/css/images/ui-icons_777777_256x240.png (from https://mh-distillery.com/wp-content/themes/anova/assets/css/jquery-ui.css)
+16:01:03	Error: 	"Not Found" (404) at link https://mh-distillery.com/wp-content/themes/anova/assets/css/images/ui-icons_ffffff_256x240.png (from https://mh-distillery.com/wp-content/themes/anova/assets/css/jquery-ui.css)
+16:01:03	Error: 	"Not Found" (404) at link https://mh-distillery.com/wp-content/themes/anova/assets/css/images/ui-icons_777620_256x240.png (from https://mh-distillery.com/wp-content/themes/anova/assets/css/jquery-ui.css)
+16:01:03	Error: 	"Not Found" (404) at link https://mh-distillery.com/wp-content/themes/anova/assets/css/images/ui-icons_cc0000_256x240.png (from https://mh-distillery.com/wp-content/themes/anova/assets/css/jquery-ui.css)
+16:53:13	Error: 	"Error when decompressing" (-1) at link https://mh-distillery.com/he/product/עולמו-הקסום-של-הוויסקי-אנגלית/ (from https://mh-distillery.com/he/tours/)
+16:53:13	Error: 	"Error when decompressing" (-1) at link https://mh-distillery.com/he/product/עולמו-הקסום-של-הוויסקי/ (from https://mh-distillery.com/he/tours/)
+16:53:13	Error: 	"Error when decompressing" (-1) at link https://mh-distillery.com/he/product/הסודות-מחדר-החביות/ (from https://mh-distillery.com/he/tours/)
+16:53:13	Error: 	"Error when decompressing" (-1) at link https://mh-distillery.com/he/product/וויסקי-ובירה/ (from https://mh-distillery.com/he/tours/)
+16:53:13	Error: 	"Error when decompressing" (-1) at link https://mh-distillery.com/he/product/הסודות-מחדר-החביות-אנגלית/ (from https://mh-distillery.com/he/tours/)
+16:53:13	Error: 	"Error when decompressing" (-1) at link https://mh-distillery.com/he/product/סדנת-קוקטיילים/ (from https://mh-distillery.com/he/tours/)
+16:53:19	Error: 	"Error when decompressing" (-1) at link https://mh-distillery.com/he/product/וויסקי-עולם-חדש/ (from https://mh-distillery.com/he/tours/)
+16:53:19	Error: 	"Error when decompressing" (-1) at link https://mh-distillery.com/he/product/סדנת-בלנדינג/ (from https://mh-distillery.com/he/tours/)
+16:53:19	Error: 	"Error when decompressing" (-1) at link https://mh-distillery.com/he/מדיניות-ביטולים-מרכז-המבקרים/ (from https://mh-distillery.com/he/tours/)
+16:53:24	Error: 	"Error when decompressing" (-1) at link https://mh-distillery.com/he/store-category/אירופה/הולנד/ (from https://mh-distillery.com/store-category/europe/netherlands/?cat=term-26)
+16:53:27	Error: 	"Error when decompressing" (-1) at link https://mh-distillery.com/he/store-category/ישראל/תל-אביב/ (from https://mh-distillery.com/store-category/israel/tel-aviv/?cat=term-21)
+16:53:28	Error: 	"Error when decompressing" (-1) at link https://mh-distillery.com/he/store-category/ישראל/צפון/ (from https://mh-distillery.com/store-category/israel/north/?cat=term-22)
+16:53:28	Error: 	"Error when decompressing" (-1) at link https://mh-distillery.com/he/store-category/ישראל/מרכז/ (from https://mh-distillery.com/store-category/israel/center/?cat=term-23)
+16:53:28	Error: 	"Error when decompressing" (-1) at link https://mh-distillery.com/he/store-category/ישראל/דרום/ (from https://mh-distillery.com/store-category/israel/south/?cat=term-24)
+16:53:29	Error: 	"Error when decompressing" (-1) at link https://mh-distillery.com/he/bar-category/אירופה/ (from https://mh-distillery.com/bar-category/europe/)
+16:53:29	Error: 	"Error when decompressing" (-1) at link https://mh-distillery.com/he/bar-category/ישראל/תל-אביב/ (from https://mh-distillery.com/bar-category/israel/tel-aviv/?cat=term-98)
+19:12:29	Warning: 	Retry after error -2 (Receive Time Out) at link https://mh-distillery.com/wp-content/uploads/2018/04/TOMER-12.4-2.mp4?_=7 (from mh-distillery.com/he/roots/)
+19:12:43	Warning: 	Retry after error -4 (Connect Error) at link https://mh-distillery.com/wp-content/uploads/2018/04/TOMER-12.4-2.mp4?_=7 (from mh-distillery.com/he/roots/)
+19:12:43	Warning: 	Retry after error -4 (Connect Error) at link https://mh-distillery.com/wp-includes/js/mediaelement/mejs-controls.svg (from https://mh-distillery.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.6-78496d1)
+19:12:43	Warning: 	Retry after error -4 (Connect Error) at link https://mh-distillery.com/store-category/israel/page/4/ (from https://mh-distillery.com/store-category/israel/page/3/)
+19:12:43	Warning: 	Retry after error -4 (Connect Error) at link https://mh-distillery.com/store-category/europe/page/5/ (from https://mh-distillery.com/store-category/europe/page/4/)
+19:12:43	Warning: 	Retry after error -4 (Connect Error) at link https://mh-distillery.com/store-category/europe/netherlands/page/4/ (from https://mh-distillery.com/store-category/europe/netherlands/page/3/)
+19:12:43	Warning: 	Retry after error -4 (Connect Error) at link https://mh-distillery.com/store-category/israel/center/page/4/ (from https://mh-distillery.com/store-category/israel/center/page/3/)
+19:12:43	Error: 	"Connect Error" (-4) after 2 retries at link https://mh-distillery.com/wp-content/uploads/2018/04/TOMER-12.4-2.mp4?_=7 (from mh-distillery.com/he/roots/)
+19:12:46	Warning: 	Retry after error -4 (Connect Error) at link https://mh-distillery.com/wp-includes/js/mediaelement/mejs-controls.svg (from https://mh-distillery.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.6-78496d1)
+19:12:46	Warning: 	Retry after error -4 (Connect Error) at link https://mh-distillery.com/store-category/israel/page/4/ (from https://mh-distillery.com/store-category/israel/page/3/)
+19:12:46	Warning: 	Retry after error -4 (Connect Error) at link https://mh-distillery.com/store-category/europe/page/5/ (from https://mh-distillery.com/store-category/europe/page/4/)
+19:12:46	Warning: 	Retry after error -4 (Connect Error) at link https://mh-distillery.com/store-category/europe/netherlands/page/4/ (from https://mh-distillery.com/store-category/europe/netherlands/page/3/)
+19:12:46	Warning: 	Retry after error -4 (Connect Error) at link https://mh-distillery.com/store-category/israel/center/page/4/ (from https://mh-distillery.com/store-category/israel/center/page/3/)
+19:12:46	Error: 	"Connect Error" (-4) after 2 retries at link https://mh-distillery.com/wp-includes/js/mediaelement/mejs-controls.svg (from https://mh-distillery.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.6-78496d1)
+19:12:46	Error: 	"Connect Error" (-4) after 2 retries at link https://mh-distillery.com/store-category/israel/page/4/ (from https://mh-distillery.com/store-category/israel/page/3/)
+19:12:46	Error: 	"Connect Error" (-4) after 2 retries at link https://mh-distillery.com/store-category/europe/page/5/ (from https://mh-distillery.com/store-category/europe/page/4/)
+19:12:46	Error: 	"Connect Error" (-4) after 2 retries at link https://mh-distillery.com/store-category/europe/netherlands/page/4/ (from https://mh-distillery.com/store-category/europe/netherlands/page/3/)
+19:12:46	Error: 	"Connect Error" (-4) after 2 retries at link https://mh-distillery.com/store-category/israel/center/page/4/ (from https://mh-distillery.com/store-category/israel/center/page/3/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 3 hours 29 minutes 11 seconds : 598 links scanned, 531 files written (289608652 bytes overall) [294078023 bytes received at 23430 bytes/sec], 13888068 bytes transferred using HTTP compression in 198 files, ratio 19%, 2.8 requests per connection
+(49 errors, 20 warnings, 0 messages)
