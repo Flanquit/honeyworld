@@ -56,7 +56,7 @@
                   </div>
                </div>
                <div class="footer-1-bar">
-                  <p>Honeyworldzimbabwe © 2019. All Rights Reserved.</p>
+               <p>Honeyworldzimbabwe © 2019. All Rights Reserved. Design by <a href="http://alpham.co.zw" style="color:#FD6702;" target="_blank">alpham.co.zw</a></p>
                </div>
             </div>
          </div>

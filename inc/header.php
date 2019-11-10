@@ -11,16 +11,16 @@
             <div class="row">
                <div class="col-md-9 col-12">
                   <ul class="top-bar-info">
-                     <li><i class="fas fa-phone"></i> Phone: +263 43773782 387</li>
-                     <li><i class="fas fa-map-marker-alt"></i></li>
-                     <li><i class="fa fa-envelope"></i>Email: info@honeyworldzimbabwe.org</li>
+                     <li><i class="fas fa-phone"></i> +263778105788 | +263773027200 </li>
+                     <li><i class="fas fa-map-marker-alt"></i>10 Clare Road, Hillside, Bulawayo Zimbabwe</li>
+                     <li><i class="fa fa-envelope"></i>info@honeyworld.co.zw</li>
                   </ul>
                </div>
                <div class="col-md-3 col-12">
                   <ul class="social-icons hidden-sm">
-                     <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                  <li><div class="fb-like" data-href="https://www.facebook.com/honeyworldzimbabwe/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div></li> 
                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                     <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                     <li><a href="https://www.facebook.com/honeyworldzimbabwe/"><i class="fab fa-facebook"></i></a></li>
                   </ul>
                </div>
             </div>
@@ -41,26 +41,48 @@
                      <a href="about.php">About Us</a>
                   </li>
                   <li>
+                     <a href="#">Shop</a>
+                        <ul class="nav-dropdown">
+                           <li>
+                              <a href="products.php">Bee Products</a>
+                           </li>
+                           <!-- <li>
+                              <a href="processing.php">Honey Processing & Sales</a>
+                           </li>
+                           <li><a href="beekeeping.php">Beekeeping Training</a></li> -->
+                        </ul>
+                  </li>
+
+                  <li>
                      <a href="#">Services</a>
                         <ul class="nav-dropdown">
                            <li>
-                              <a href="sustainable.php">Sustainable Social Impact</a>
+                              <a href="BeeRemoval.php">Bee Removal</a>
                            </li>
                            <li>
-                              <a href="processing.php">Honey Processing & Sales</a>
+                              <a href="apiary.php">Apiary Setup</a>
                            </li>
                            <li><a href="beekeeping.php">Beekeeping Training</a></li>
+
+                           <li><a href="equipment.php">Bee keeping Equipment</a></li>
+                           
+                           
+                            
+                           
                         </ul>
                   </li>
+
+
                   <li>
-                     <a href="gallery.php">Our Gallery</a>
+                     <a href="sustainable.php">Sustainable Impact </a>
                   </li>
                   <li>
                      <a href="contact.php">Contact Us</a>
                   </li>
-                  <li>
+                  <!-- <li>
                      <a href="donate.php">Donate Now</a>
-                  </li>
+                  </li> -->
+                  
                </ul>
             </div>
          </nav>

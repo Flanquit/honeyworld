@@ -17,9 +17,9 @@
       <div class="section-block">
          <div class="container">
             <div class="section-heading center-holder">
-               <h3 class="semi-bold">Beekeeping Training</h3>
+               <h3 class="semi-bold">Bee Removal</h3>
                <div class="section-heading-line line-thin"></div>
-               <p>Call us for details, we desire to see more people.</p>
+               <p>We are expects in all bee removal humanely. We always perform a live bee removal of honey bees. upon request anywhere In Harare,Bulawayo and Mutare .</p>
             </div>
             <div class="mt-70"></div>
          
