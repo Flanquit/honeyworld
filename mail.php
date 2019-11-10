@@ -20,7 +20,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "alflanquit@gmail.com";
+        $recipient = "info@honeyworld.co.zw";
 
         // Set the email subject.
         $subject = "Online Web Contact from $name";
