@@ -98,7 +98,7 @@
                      <p>Our aim is to support the marginalized rural smallholder farmers of Zimbabwe to venture into beekeeping as an income generating activity and as a way to foster environmental conservation.</p>
                   </div>
                   <ul class="primary-list mt-20">
-                     <li><i class="fas fa-check-circle"></i>Book keeping training.</li>
+                     <li><i class="fas fa-check-circle"></i>Bee keeping training.</li>
                      <li><i class="fas fa-check-circle"></i>Provision of equipments.</li>
                      <li><i class="fas fa-check-circle"></i>Advice on morden bee keeping.</li>
                   </ul>
