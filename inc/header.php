@@ -40,35 +40,41 @@
                   <li>
                      <a href="about.php">About Us</a>
                   </li>
+          
+
                   <li>
-                     <a href="#">Shop</a>
+                     <a href="#">Products & Services</a>
+                        
                         <ul class="nav-dropdown">
+                          <li>
+
+                          <a href="#"><b>Services</b></a>
+                          <ul class="nav-dropdown">
+                              <li>
+                                    <a href="BeeRemoval.php">Bee Removal</a>
+                                 </li>
+                                 <li>
+                                    <a href="apiary.php">Apiary Setup</a>
+                                 </li>
+                                 <li><a href="beekeeping.php">Beekeeping Training</a></li>
+
+                                 <li><a href="equipment.php">Bee keeping Equipment</a></li>
+                          </ul>
+
+                          </li>
+                           
+
                            <li>
+
+                              <a href="#"><b>Products</b></a>
+                              <ul class="nav-dropdown">
+                              <li>
                               <a href="products.php">Bee Products</a>
                            </li>
-                           <!-- <li>
-                              <a href="processing.php">Honey Processing & Sales</a>
-                           </li>
-                           <li><a href="beekeeping.php">Beekeeping Training</a></li> -->
-                        </ul>
-                  </li>
+                              </ul>
 
-                  <li>
-                     <a href="#">Services</a>
-                        <ul class="nav-dropdown">
-                           <li>
-                              <a href="BeeRemoval.php">Bee Removal</a>
-                           </li>
-                           <li>
-                              <a href="apiary.php">Apiary Setup</a>
-                           </li>
-                           <li><a href="beekeeping.php">Beekeeping Training</a></li>
-
-                           <li><a href="equipment.php">Bee keeping Equipment</a></li>
-                           
-                           
-                            
-                           
+                              </li>
+                                   
                         </ul>
                   </li>
 
@@ -76,6 +82,15 @@
                   <li>
                      <a href="sustainable.php">Sustainable Impact </a>
                   </li>
+
+                  <li>
+                     <a href="#">Our Blog</a>
+                  </li> 
+
+                  <!-- <li>
+                     <a href="#">Our Blog</a>
+                  </li>  -->
+
                   <li>
                      <a href="contact.php">Contact Us</a>
                   </li>

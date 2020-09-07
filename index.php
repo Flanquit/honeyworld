@@ -57,9 +57,9 @@
                   <div class="service-block">
                      <img src="img/logos/gardening2.jpg" alt="img">
                      <div class="service-block-content">
-                        <h4>Gardening for bees</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
-                        <a href="#" class="service-block-content-button"><i class="fas fa-arrow-right"></i></a>
+                        <h4>Our Products</h4>
+                        <p>Bee and Honey Products.</p>
+                        <a href="products.php" class="service-block-content-button"><i class="fas fa-arrow-right"></i></a>
                      </div>
                   </div>
                </div>
@@ -67,9 +67,9 @@
                   <div class="service-block">
                      <img src="img/logos/schoolproject.png" alt="img">
                      <div class="service-block-content">
-                        <h4>Bees in Schools</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
-                        <a href="#" class="service-block-content-button"><i class="fas fa-arrow-right"></i></a>
+                        <h4>Our Strategy</h4>
+                        <p>Out-Grower Scheme.</p>
+                        <a href="strategy.php" class="service-block-content-button"><i class="fas fa-arrow-right"></i></a>
                      </div>
                   </div>
                </div>
@@ -77,9 +77,9 @@
                   <div class="service-block">
                      <img src="img/logos/swarm2.jpg" alt="img">
                      <div class="service-block-content">
-                        <h4>Swarm Removal</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
-                        <a href="#" class="service-block-content-button"><i class="fas fa-arrow-right"></i></a>
+                        <h4>Our Impact </h4>
+                        <p>Sustainable Income.</p>
+                        <a href="impact.php" class="service-block-content-button"><i class="fas fa-arrow-right"></i></a>
                      </div>
                   </div>
                </div>

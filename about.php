@@ -78,6 +78,8 @@ HWZ Team
                      </div>
                   </div>
                </div>
+
+               <a href="#" class="button-md button-primary mt-30" >Our Photo Gallery</a>
             </div>
          </div>
       </div>
