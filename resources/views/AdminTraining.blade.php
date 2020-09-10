@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">{{ __('About US') }}</div>
+                <div class="card-header">{{ __('Training') }}</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -15,7 +15,7 @@
                     @endif
 
 
-                    <form action="{{ route('UpdateAbout') }}" method="POST">
+                    <form action="{{ route('UpdateTraining') }}" method="POST">
                         @csrf
 
                         <div class="row">

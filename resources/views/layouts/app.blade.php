@@ -60,10 +60,10 @@
                               Products & Services
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="#">BeeRemoval</a>
-                              <a class="dropdown-item" href="#">Apiary</a>
-                              <a class="dropdown-item" href="#">Training</a>
-                              <a class="dropdown-item" href="#">Equipment</a>
+                              <a class="dropdown-item" href="{{ url('AdminBeeRemoval') }}">BeeRemoval</a>
+                              <a class="dropdown-item" href="{{ url('AdminApiary') }}">Apiary</a>
+                              <a class="dropdown-item" href="{{ url('AdminTraining') }}">Training</a>
+                              <a class="dropdown-item" href="{{ url('AdminEquipment') }}">Equipment</a>
                               <div class="dropdown-divider"></div>
                               <a class="dropdown-item" href="#">Bee Products</a>
                             </div>
@@ -73,14 +73,14 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                             <ul class="navbar-nav mr-auto">
                               <li class="nav-item">
-                                <a class="nav-link" href="#">Sustainable </a>
+                                <a class="nav-link" href="{{ url('AdminSustainable') }}">Sustainable </a>
                               </li>
                               <li class="nav-item">
                                 <a class="nav-link" href="#">Blog</a>
                               </li>
 
                               <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="{{ url('AdminContact') }}">Contact</a>
                               </li>
 
 
