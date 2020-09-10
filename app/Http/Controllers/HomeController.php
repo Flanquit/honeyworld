@@ -246,7 +246,7 @@ class HomeController extends Controller
         $flight->PageName = $request->pagename;
         $flight->save();
 
-      
+
     }
 
 
@@ -259,6 +259,8 @@ class HomeController extends Controller
             ['PageName' => $request->pagename]
         );
 
+        return redirect()->back()->with('success', 'Page Has Been Updated ');
+
     }
 
     public function UpdateBeeRemoval(Request $request){
@@ -269,6 +271,8 @@ class HomeController extends Controller
             ['HeadingOne' => $request->heading, 'ContentOne' => $request->content],
             ['PageName' => $request->pagename]
         );
+
+        return redirect()->back()->with('success', 'Page Has Been Updated ');
 
     }
 
@@ -282,6 +286,8 @@ class HomeController extends Controller
             ['PageName' => $request->pagename]
         );
 
+        return redirect()->back()->with('success', 'Page Has Been Updated ');
+
     }
 
     public function UpdateTraining(Request $request){
@@ -292,6 +298,8 @@ class HomeController extends Controller
             ['HeadingOne' => $request->heading, 'ContentOne' => $request->content],
             ['PageName' => $request->pagename]
         );
+
+        return redirect()->back()->with('success', 'Page Has Been Updated ');
 
     }
 
@@ -304,6 +312,8 @@ class HomeController extends Controller
             ['PageName' => $request->pagename]
         );
 
+        return redirect()->back()->with('success', 'Page Has Been Updated ');
+
     }
 
     public function UpdateProducts(Request $request){
@@ -314,6 +324,8 @@ class HomeController extends Controller
             ['HeadingOne' => $request->heading, 'ContentOne' => $request->content],
             ['PageName' => $request->pagename]
         );
+
+        return redirect()->back()->with('success', 'Page Has Been Updated ');
 
     }
 
@@ -326,6 +338,8 @@ class HomeController extends Controller
             ['PageName' => $request->pagename]
         );
 
+        return redirect()->back()->with('success', 'Page Has Been Updated ');
+
     }
 
     public function UpdateContact(Request $request){
@@ -336,6 +350,8 @@ class HomeController extends Controller
             ['HeadingOne' => $request->heading, 'ContentOne' => $request->content],
             ['PageName' => $request->pagename]
         );
+
+        return redirect()->back()->with('success', 'Page Has Been Updated ');                       
 
     }
 

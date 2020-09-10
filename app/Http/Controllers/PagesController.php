@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Content;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 
 
 class PagesController extends Controller
@@ -18,31 +21,144 @@ class PagesController extends Controller
     }
 
     public function about(){
-        return view('About');
+
+        $flight = Content::where('PageName', 'About Us')->get();
+        // dd($flight);
+        foreach ($flight as $item){
+            $PageName = $item->PageName;
+            $HeadingOne = $item->HeadingOne;
+            $HeadingTwo = $item->HeadingTwo;
+            $HeadingThree = $item->HeadingThree;
+            $HeadingFour = $item->HeadingFour;
+            $ContentOne = $item->ContentOne;
+            $ContentTwo = $item->ContentTwo;
+            $ContentThree = $item->ContentThree;
+            $ContentFour = $item->ContentFour;
+            $PhoneOne = $item->PhoneOne;
+            $PhoneTwo = $item->PhoneTwo;
+            $PhoneThree = $item->PhoneThree;
+            $HeaderImageUrl = $item->HeaderImageUrl;
+
+        }
+        return view('About')->with(compact('PageName', 'HeadingOne', 'HeadingTwo', 'HeadingThree', 'HeadingFour', 'ContentOne', 'ContentTwo', 'ContentThree', 'ContentFour', 'PhoneOne', 'PhoneTwo', 'PhoneThree', 'HeaderImageUrl', 'flight'));
     }
 
     public function BeeRemoval(){
-        return view('BeeRemoval');
+
+        $flight = Content::where('PageName', 'Bee Removal')->get();
+        // dd($flight);
+        foreach ($flight as $item){
+            $PageName = $item->PageName;
+            $HeadingOne = $item->HeadingOne;
+            $HeadingTwo = $item->HeadingTwo;
+            $HeadingThree = $item->HeadingThree;
+            $HeadingFour = $item->HeadingFour;
+            $ContentOne = $item->ContentOne;
+            $ContentTwo = $item->ContentTwo;
+            $ContentThree = $item->ContentThree;
+            $ContentFour = $item->ContentFour;
+            $PhoneOne = $item->PhoneOne;
+            $PhoneTwo = $item->PhoneTwo;
+            $PhoneThree = $item->PhoneThree;
+            $HeaderImageUrl = $item->HeaderImageUrl;
+
+        }
+
+        return view('BeeRemoval')->with(compact('PageName', 'HeadingOne', 'HeadingTwo', 'HeadingThree', 'HeadingFour', 'ContentOne', 'ContentTwo', 'ContentThree', 'ContentFour', 'PhoneOne', 'PhoneTwo', 'PhoneThree', 'HeaderImageUrl', 'flight'));
     }
 
 
     public function Apiary(){
-        return view('Apiary');
+
+        $flight = Content::where('PageName', 'Apiary')->get();
+        // dd($flight);
+        foreach ($flight as $item){
+            $PageName = $item->PageName;
+            $HeadingOne = $item->HeadingOne;
+            $HeadingTwo = $item->HeadingTwo;
+            $HeadingThree = $item->HeadingThree;
+            $HeadingFour = $item->HeadingFour;
+            $ContentOne = $item->ContentOne;
+            $ContentTwo = $item->ContentTwo;
+            $ContentThree = $item->ContentThree;
+            $ContentFour = $item->ContentFour;
+            $PhoneOne = $item->PhoneOne;
+            $PhoneTwo = $item->PhoneTwo;
+            $PhoneThree = $item->PhoneThree;
+            $HeaderImageUrl = $item->HeaderImageUrl;
+
+        }
+
+        return view('Apiary')->with(compact('PageName', 'HeadingOne', 'HeadingTwo', 'HeadingThree', 'HeadingFour', 'ContentOne', 'ContentTwo', 'ContentThree', 'ContentFour', 'PhoneOne', 'PhoneTwo', 'PhoneThree', 'HeaderImageUrl', 'flight'));
     }
 
 
     public function Training(){
-        return view('Training');
+        $flight = Content::where('PageName', 'Training')->get();
+        // dd($flight);
+        foreach ($flight as $item){
+            $PageName = $item->PageName;
+            $HeadingOne = $item->HeadingOne;
+            $HeadingTwo = $item->HeadingTwo;
+            $HeadingThree = $item->HeadingThree;
+            $HeadingFour = $item->HeadingFour;
+            $ContentOne = $item->ContentOne;
+            $ContentTwo = $item->ContentTwo;
+            $ContentThree = $item->ContentThree;
+            $ContentFour = $item->ContentFour;
+            $PhoneOne = $item->PhoneOne;
+            $PhoneTwo = $item->PhoneTwo;
+            $PhoneThree = $item->PhoneThree;
+            $HeaderImageUrl = $item->HeaderImageUrl;
+
+        }
+        return view('Training')->with(compact('PageName', 'HeadingOne', 'HeadingTwo', 'HeadingThree', 'HeadingFour', 'ContentOne', 'ContentTwo', 'ContentThree', 'ContentFour', 'PhoneOne', 'PhoneTwo', 'PhoneThree', 'HeaderImageUrl', 'flight'));
     }
 
 
     public function Equipment(){
-        return view('Equipment');
+        $flight = Content::where('PageName', 'Equipment')->get();
+        // dd($flight);
+        foreach ($flight as $item){
+            $PageName = $item->PageName;
+            $HeadingOne = $item->HeadingOne;
+            $HeadingTwo = $item->HeadingTwo;
+            $HeadingThree = $item->HeadingThree;
+            $HeadingFour = $item->HeadingFour;
+            $ContentOne = $item->ContentOne;
+            $ContentTwo = $item->ContentTwo;
+            $ContentThree = $item->ContentThree;
+            $ContentFour = $item->ContentFour;
+            $PhoneOne = $item->PhoneOne;
+            $PhoneTwo = $item->PhoneTwo;
+            $PhoneThree = $item->PhoneThree;
+            $HeaderImageUrl = $item->HeaderImageUrl;
+
+        }
+        return view('Equipment')->with(compact('PageName', 'HeadingOne', 'HeadingTwo', 'HeadingThree', 'HeadingFour', 'ContentOne', 'ContentTwo', 'ContentThree', 'ContentFour', 'PhoneOne', 'PhoneTwo', 'PhoneThree', 'HeaderImageUrl', 'flight'));
     }
 
 
     public function Sustainable(){
-        return view('Sustainable');
+        $flight = Content::where('PageName', 'Sustainable')->get();
+        // dd($flight);
+        foreach ($flight as $item){
+            $PageName = $item->PageName;
+            $HeadingOne = $item->HeadingOne;
+            $HeadingTwo = $item->HeadingTwo;
+            $HeadingThree = $item->HeadingThree;
+            $HeadingFour = $item->HeadingFour;
+            $ContentOne = $item->ContentOne;
+            $ContentTwo = $item->ContentTwo;
+            $ContentThree = $item->ContentThree;
+            $ContentFour = $item->ContentFour;
+            $PhoneOne = $item->PhoneOne;
+            $PhoneTwo = $item->PhoneTwo;
+            $PhoneThree = $item->PhoneThree;
+            $HeaderImageUrl = $item->HeaderImageUrl;
+
+        }
+        return view('Sustainable')->with(compact('PageName', 'HeadingOne', 'HeadingTwo', 'HeadingThree', 'HeadingFour', 'ContentOne', 'ContentTwo', 'ContentThree', 'ContentFour', 'PhoneOne', 'PhoneTwo', 'PhoneThree', 'HeaderImageUrl', 'flight'));
     }
 
 
@@ -52,7 +168,25 @@ class PagesController extends Controller
 
 
     public function Contact(){
-        return view('Contact');
+        $flight = Content::where('PageName', 'Contact')->get();
+        // dd($flight);
+        foreach ($flight as $item){
+            $PageName = $item->PageName;
+            $HeadingOne = $item->HeadingOne;
+            $HeadingTwo = $item->HeadingTwo;
+            $HeadingThree = $item->HeadingThree;
+            $HeadingFour = $item->HeadingFour;
+            $ContentOne = $item->ContentOne;
+            $ContentTwo = $item->ContentTwo;
+            $ContentThree = $item->ContentThree;
+            $ContentFour = $item->ContentFour;
+            $PhoneOne = $item->PhoneOne;
+            $PhoneTwo = $item->PhoneTwo;
+            $PhoneThree = $item->PhoneThree;
+            $HeaderImageUrl = $item->HeaderImageUrl;
+
+        }
+        return view('Contact')->with(compact('PageName', 'HeadingOne', 'HeadingTwo', 'HeadingThree', 'HeadingFour', 'ContentOne', 'ContentTwo', 'ContentThree', 'ContentFour', 'PhoneOne', 'PhoneTwo', 'PhoneThree', 'HeaderImageUrl', 'flight'));
     }
 
 

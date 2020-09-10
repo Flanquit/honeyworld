@@ -41,10 +41,10 @@
           <div class="col-md-6 col-sm-12 col-12">
              <div class="pl-45-md">
                 <div class="callback-block">
-                   <h4 class="bold text-center">Make a request now.</h4>
+                   <h4 class="bold text-center">{{ $HeadingOne }}.</h4>
                    <div class="section-heading-line line-thin"></div>
                    <div class="text-content-big text-center mt-20">
-                      <p>Feel free to contact us by filling the form below with relevant details. We are eager to help you!.</p>
+                      <p>{{ $ContentOne }}</p>
                    </div>
                    <form class="primary-form mt-30" action="mail.php" method="post">
                       <div class="row">

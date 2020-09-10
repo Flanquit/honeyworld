@@ -11,9 +11,9 @@
  <div class="section-block">
     <div class="container">
        <div class="section-heading center-holder">
-          <h3 class="semi-bold">Apiary Setup</h3>
+          <h3 class="semi-bold"> {{ $HeadingOne }}</h3>
           <div class="section-heading-line line-thin"></div>
-          <p>We help and we have teams to help you setup.</p>
+          <p>{{ $ContentOne }}</p>
        </div>
        <div class="mt-70"></div>
 

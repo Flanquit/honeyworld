@@ -8,12 +8,13 @@
                 <div class="card-header">{{ __('About US') }}</div>
 
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
+                    @if (\Session::has('success'))
+                    <div class="alert alert-success">
+                        <ul>
+                            <li>{!! \Session::get('success') !!}</li>
+                        </ul>
+                    </div>
                     @endif
-
 
                     <form action="{{ route('UpdateAbout') }}" method="POST">
                         @csrf

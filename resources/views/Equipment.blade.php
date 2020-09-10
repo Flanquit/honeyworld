@@ -11,11 +11,9 @@
  <div class="section-block">
     <div class="container">
        <div class="section-heading center-holder">
-          <h3 class="semi-bold">Bee keeping Equipment</h3>
+          <h3 class="semi-bold"> {{ $HeadingOne }}</h3>
           <div class="section-heading-line line-thin"></div>
-          <p>We provide hives and hive tools
-           -Honey Processing Equipment
-           .</p>
+          <p>{{ $ContentOne }}</p>
        </div>
        <div class="mt-70"></div>
 
