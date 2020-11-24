@@ -17,12 +17,30 @@ class PagesController extends Controller
      */
     public function home()
     {
-        return view('homepage');
+        $item = Content::where('PageName', 'Home')->first();
+
+        $PageName = $item->PageName;
+        $HeadingOne = $item->HeadingOne;
+        $HeadingTwo = $item->HeadingTwo;
+        $HeadingThree = $item->HeadingThree;
+        $HeadingFour = $item->HeadingFour;
+        $ContentOne = $item->ContentOne;
+        $ContentTwo = $item->ContentTwo;
+        $ContentThree = $item->ContentThree;
+        $ContentFour = $item->ContentFour;
+        $PhoneOne = $item->PhoneOne;
+        $PhoneTwo = $item->PhoneTwo;
+        $PhoneThree = $item->PhoneThree;
+        $HeaderImageUrl = $item->HeaderImageUrl;
+
+        // dd($PageName);
+
+        return view('homepage')->with(compact('PageName', 'HeadingOne', 'HeadingTwo', 'HeadingThree', 'HeadingFour', 'ContentOne', 'ContentTwo', 'ContentThree', 'ContentFour', 'PhoneOne', 'PhoneTwo', 'PhoneThree', 'HeaderImageUrl'));
     }
 
     public function about(){
 
-        $flight = Content::where('PageName', 'About Us')->get();
+        $flight = Content::where('PageName', 'About')->get();
         // dd($flight);
         foreach ($flight as $item){
             $PageName = $item->PageName;

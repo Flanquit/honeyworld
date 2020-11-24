@@ -30,7 +30,7 @@ Route::get('/Training', 'PagesController@Training')->name('Training');
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/AdminAbout', 'HomeController@AdminAbout')->name('AdminAbout');
-// use below to add data only Add 
+// use below to add data only Add
 Route::post('/Add' , 'HomeController@Add')->name('Add');
 Route::post('/UpdateAbout' , 'HomeController@UpdateAbout')->name('UpdateAbout');
 Route::get('/AdminBeeRemoval' , 'HomeController@AdminBeeRemoval')->name('AdminBeeRemoval');
@@ -38,9 +38,14 @@ Route::get('/AdminApiary' , 'HomeController@AdminApiary')->name('AdminApiary');
 Route::get('/AdminTraining' , 'HomeController@AdminTraining')->name('AdminTraining');
 Route::get('/AdminEquipment' , 'HomeController@AdminEquipment')->name('AdminEquipment');
 // Route::get('/AdminProducts' , 'HomeController@AdminProducts')->name('AdminProducts');
+Route::get('/AdminHome' , 'HomeController@AdminHome')->name('AdminHome');
+
 Route::get('/AdminSustainable' , 'HomeController@AdminSustainable')->name('AdminSustainable');
 Route::get('/AdminContact' , 'HomeController@AdminContact')->name('AdminContact');
-// Update Routes 
+
+
+// Update Routes
+Route::post('/UpdateHome' , 'HomeController@UpdateHome')->name('UpdateHome');
 Route::post('/UpdateBeeRemoval' , 'HomeController@UpdateBeeRemoval')->name('UpdateBeeRemoval');
 Route::post('/UpdateApiary' , 'HomeController@UpdateApiary')->name('UpdateApiary');
 Route::post('/UpdateTraining' , 'HomeController@UpdateTraining')->name('UpdateTraining');

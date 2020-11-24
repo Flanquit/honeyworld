@@ -31,7 +31,7 @@ class HomeController extends Controller
 
     public function AdminAbout(){
         // $PageDetails = Content::all();
-        $flight = Content::where('PageName', 'About Us')->get();
+        $flight = Content::where('PageName', 'About')->get();
         // dd($flight);
         foreach ($flight as $item){
             $PageName = $item->PageName;
@@ -52,6 +52,36 @@ class HomeController extends Controller
         // dd($flight->PageName);
         return view('AdminAbout')->with(compact('PageName', 'HeadingOne', 'HeadingTwo', 'HeadingThree', 'HeadingFour', 'ContentOne', 'ContentTwo', 'ContentThree', 'ContentFour', 'PhoneOne', 'PhoneTwo', 'PhoneThree', 'HeaderImageUrl', 'flight'));
     }
+
+
+
+
+    public function AdminHome(){
+        // $PageDetails = Content::all();
+        $flight = Content::where('PageName', 'Home')->get();
+        // dd($flight);
+        foreach ($flight as $item){
+            $PageName = $item->PageName;
+            $HeadingOne = $item->HeadingOne;
+            $HeadingTwo = $item->HeadingTwo;
+            $HeadingThree = $item->HeadingThree;
+            $HeadingFour = $item->HeadingFour;
+            $ContentOne = $item->ContentOne;
+            $ContentTwo = $item->ContentTwo;
+            $ContentThree = $item->ContentThree;
+            $ContentFour = $item->ContentFour;
+            $PhoneOne = $item->PhoneOne;
+            $PhoneTwo = $item->PhoneTwo;
+            $PhoneThree = $item->PhoneThree;
+            $HeaderImageUrl = $item->HeaderImageUrl;
+
+        }
+        // dd($flight->PageName);
+        return view('AdminHome')->with(compact('PageName', 'HeadingOne', 'HeadingTwo', 'HeadingThree', 'HeadingFour', 'ContentOne', 'ContentTwo', 'ContentThree', 'ContentFour', 'PhoneOne', 'PhoneTwo', 'PhoneThree', 'HeaderImageUrl', 'flight'));
+    }
+
+
+
 
 
     public function AdminBeeRemoval(){
@@ -253,15 +283,168 @@ class HomeController extends Controller
     public function UpdateAbout(Request $request){
 
 
-        DB::table('contents')->where('PageName', 'About Us')
-        ->update(
-            ['HeadingOne' => $request->heading, 'ContentOne' => $request->content],
-            ['PageName' => $request->pagename]
-        );
+
+        if ($request->hasFile('AboutImg')){
+            if ($request->file('AboutImg')->isValid()) {
+                // $PageName = $request->input('PageName');
+                // $ImageTitle = 'SlideOne';
+                $path = $request->AboutImg->storePubliclyAs('images', 'About/AboutImg.jpg', 'public');
+                // dd($path);
+                $FileID = Content::where('PageName', '=', 'About')->first();
+                $id = $FileID->id;
+                $SlideImages = Content::find($id);
+                $SlideImages->HeaderImageUrl = $path;
+                $SlideImages->HeadingOne = $request->input('heading');
+                $SlideImages->PageName = 'About';
+                $SlideImages->ContentOne = $request->input('content');
+                $SlideImages->save();
+                return redirect()->back()->with('success', 'Page Has Been Updated ');
+            }
+        }
+
+
+
+
+
+    }
+
+
+
+
+    public function UpdateHome(Request $request){
+
+        // $path = $request->SlideOne->storePubliclyAs('images', 'Slides/SlideOne.jpg', 'public');
+        // DB::table('contents')->where('PageName', 'Home')
+        // ->update(
+
+        //     ['HeadingOne' => $request->heading, 'ContentOne' => $request->content],
+        //     ['PageName' => $request->pagename]
+        // );
+
+
+        if ($request->hasFile('SlideOne')){
+            if ($request->file('SlideOne')->isValid()) {
+                // $PageName = $request->input('PageName');
+                // $ImageTitle = 'SlideOne';
+                $path = $request->SlideOne->storePubliclyAs('images', 'Slides/SlideOne.jpg', 'public');
+                // dd($path);
+                $FileID = Content::where('PageName', '=', 'Home')->first();
+                $id = $FileID->id;
+                $SlideImages = Content::find($id);
+                $SlideImages->HeadingTwo = $path;
+                $SlideImages->HeadingOne = $request->input('heading');
+                $SlideImages->PageName = 'Home';
+                $SlideImages->ContentOne = $request->input('content');
+                $SlideImages->save();
+                return back()->with('success', 'Slide One Has Been Changed');
+            }
+        }elseif ($request->hasFile('SlideTwo')){
+            if ($request->file('SlideTwo')->isValid()) {
+                // $PageName = $request->input('PageName');
+                // $ImageTitle = 'SlideOne';
+                $path = $request->SlideTwo->storePubliclyAs('images', 'Slides/SlideTwo.jpg', 'public');
+                // dd($path);
+                $FileID = Content::where('PageName', '=', 'Home')->first();
+                $id = $FileID->id;
+                $SlideImages = Content::find($id);
+                $SlideImages->HeadingThree = $path;
+                $SlideImages->HeadingOne = $request->input('heading');
+                $SlideImages->PageName = 'Home';
+                $SlideImages->ContentOne = $request->input('content');
+                $SlideImages->save();
+                return back()->with('success', 'Slide Two Has Been Changed');
+            }
+        }elseif ($request->hasFile('SlideThree')){
+            if ($request->file('SlideThree')->isValid()) {
+                // $PageName = $request->input('PageName');
+                // $ImageTitle = 'SlideOne';
+                $path = $request->SlideThree->storePubliclyAs('images', 'Slides/SlideThree.jpg', 'public');
+                // dd($path);
+                $FileID = Content::where('PageName', '=', 'Home')->first();
+                $id = $FileID->id;
+                $SlideImages = Content::find($id);
+                $SlideImages->HeadingFour = $path;
+                $SlideImages->HeadingOne = $request->input('heading');
+                $SlideImages->PageName = 'Home';
+                $SlideImages->ContentOne = $request->input('content');
+                $SlideImages->save();
+                return back()->with('success', 'Slide Three Has Been Changed');
+            }
+        }elseif ($request->hasFile('ProductsImg')){
+            if ($request->file('ProductsImg')->isValid()) {
+                // $PageName = $request->input('PageName');
+                // $ImageTitle = 'SlideOne';
+                $path = $request->ProductsImg->storePubliclyAs('images', 'Home/ProductsImg.jpg', 'public');
+                // dd($path);
+                $FileID = Content::where('PageName', '=', 'Home')->first();
+                $id = $FileID->id;
+                $SlideImages = Content::find($id);
+                $SlideImages->ContentTwo = $path;
+                $SlideImages->HeadingOne = $request->input('heading');
+                $SlideImages->PageName = 'Home';
+                $SlideImages->ContentOne = $request->input('content');
+                $SlideImages->save();
+                return back()->with('success', 'Product image saved ');
+            }
+        }elseif ($request->hasFile('ServicesImg')){
+            if ($request->file('ServicesImg')->isValid()) {
+                // $PageName = $request->input('PageName');
+                // $ImageTitle = 'SlideOne';
+                $path = $request->ServicesImg->storePubliclyAs('images', 'Home/ServicesImg.jpg', 'public');
+                // dd($path);
+                $FileID = Content::where('PageName', '=', 'Home')->first();
+                $id = $FileID->id;
+                $SlideImages = Content::find($id);
+                $SlideImages->ContentThree = $path;
+                $SlideImages->HeadingOne = $request->input('heading');
+                $SlideImages->PageName = 'Home';
+                $SlideImages->ContentOne = $request->input('content');
+                $SlideImages->save();
+                return back()->with('success', 'Services image saved ');
+            }
+        }elseif ($request->hasFile('StrategyImg')){
+            if ($request->file('StrategyImg')->isValid()) {
+                // $PageName = $StrategyImg->input('PageName');
+                // $ImageTitle = 'SlideOne';
+                $path = $request->StrategyImg->storePubliclyAs('images', 'Home/StrategyImg.jpg', 'public');
+                // dd($path);
+                $FileID = Content::where('PageName', '=', 'Home')->first();
+                $id = $FileID->id;
+                $SlideImages = Content::find($id);
+                $SlideImages->ContentFour = $path;
+                $SlideImages->HeadingOne = $request->input('heading');
+                $SlideImages->PageName = 'Home';
+                $SlideImages->ContentOne = $request->input('content');
+                $SlideImages->save();
+                return back()->with('success', 'StrategyImg image saved ');
+            }
+        }elseif ($request->hasFile('ImpactImg')){
+            if ($request->file('ImpactImg')->isValid()) {
+                // $PageName = $StrategyImg->input('PageName');
+                // $ImageTitle = 'SlideOne';
+                $path = $request->ImpactImg->storePubliclyAs('images', 'Home/ImpactImg.jpg', 'public');
+                // dd($path);
+                $FileID = Content::where('PageName', '=', 'Home')->first();
+                $id = $FileID->id;
+                $SlideImages = Content::find($id);
+                $SlideImages->HeaderImageUrl = $path;
+                $SlideImages->HeadingOne = $request->input('heading');
+                $SlideImages->PageName = 'Home';
+                $SlideImages->ContentOne = $request->input('content');
+                $SlideImages->save();
+                return back()->with('success', 'StrategyImg image saved ');
+            }
+        }
+        else {
+
+            return back()->with('failed', 'Failed');
+        }
 
         return redirect()->back()->with('success', 'Page Has Been Updated ');
 
     }
+
+
 
     public function UpdateBeeRemoval(Request $request){
 
@@ -351,7 +534,7 @@ class HomeController extends Controller
             ['PageName' => $request->pagename]
         );
 
-        return redirect()->back()->with('success', 'Page Has Been Updated ');                       
+        return redirect()->back()->with('success', 'Page Has Been Updated ');
 
     }
 
