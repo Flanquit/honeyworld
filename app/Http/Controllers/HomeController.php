@@ -74,10 +74,12 @@ class HomeController extends Controller
             $PhoneTwo = $item->PhoneTwo;
             $PhoneThree = $item->PhoneThree;
             $HeaderImageUrl = $item->HeaderImageUrl;
+            $Address = $item->Address;
+            $Email = $item->Email;
 
         }
         // dd($flight->PageName);
-        return view('AdminHome')->with(compact('PageName', 'HeadingOne', 'HeadingTwo', 'HeadingThree', 'HeadingFour', 'ContentOne', 'ContentTwo', 'ContentThree', 'ContentFour', 'PhoneOne', 'PhoneTwo', 'PhoneThree', 'HeaderImageUrl', 'flight'));
+        return view('AdminHome')->with(compact('PageName', 'HeadingOne', 'HeadingTwo', 'HeadingThree', 'HeadingFour', 'ContentOne', 'ContentTwo', 'ContentThree', 'ContentFour', 'PhoneOne', 'PhoneTwo', 'PhoneThree', 'HeaderImageUrl', 'flight', 'Address', 'Email'));
     }
 
 
@@ -321,6 +323,8 @@ class HomeController extends Controller
         //     ['PageName' => $request->pagename]
         // );
 
+        // dd($request);
+
 
         if ($request->hasFile('SlideOne')){
             if ($request->file('SlideOne')->isValid()) {
@@ -434,10 +438,19 @@ class HomeController extends Controller
                 $SlideImages->save();
                 return back()->with('success', 'StrategyImg image saved ');
             }
-        }
-        else {
+        }elseif (  count($request->all()) > 1  ) {
 
-            return back()->with('failed', 'Failed');
+                $FileID = Content::where('PageName', '=', 'Home')->first();
+                $id = $FileID->id;
+                $SlideImages = Content::find($id);
+                $SlideImages->ContentOne = $request->input('content');
+                $SlideImages->PhoneOne = $request->input('PhoneOne');
+                $SlideImages->PhoneTwo = $request->input('PhoneTwo');
+                $SlideImages->Address = $request->input('Address');
+                $SlideImages->save();
+                return back()->with('success', 'Content Saved ');
+        }else{
+            return back()->with('success', 'Failed to Update ');
         }
 
         return redirect()->back()->with('success', 'Page Has Been Updated ');

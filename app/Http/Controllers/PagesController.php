@@ -32,10 +32,12 @@ class PagesController extends Controller
         $PhoneTwo = $item->PhoneTwo;
         $PhoneThree = $item->PhoneThree;
         $HeaderImageUrl = $item->HeaderImageUrl;
+        $Address = $item->Address;
+        $Email = $item->Email;
 
-        // dd($PageName);
+        // dd($HeadingTwo);
 
-        return view('homepage')->with(compact('PageName', 'HeadingOne', 'HeadingTwo', 'HeadingThree', 'HeadingFour', 'ContentOne', 'ContentTwo', 'ContentThree', 'ContentFour', 'PhoneOne', 'PhoneTwo', 'PhoneThree', 'HeaderImageUrl'));
+        return view('homepage')->with(compact('PageName', 'HeadingOne', 'HeadingTwo', 'HeadingThree', 'HeadingFour', 'ContentOne', 'ContentTwo', 'ContentThree', 'ContentFour', 'PhoneOne', 'PhoneTwo', 'PhoneThree', 'HeaderImageUrl', 'Address', 'Email'));
     }
 
     public function about(){

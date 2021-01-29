@@ -5,6 +5,8 @@
 <div class="rev_slider_wrapper bg-arrows">
     <div id="rev_slider" class="rev_slider fullscreenbanner">
        <ul>
+
+
         {{-- {{ asset('storage/'.$HeadingTwo->HeadingTwo)}} --}}
           <li data-delay="5000" data-transition="slotzoom-horizontal" data-slotamount="7" data-masterspeed="500" data-fsmasterspeed="500">
              <img src="{{ asset('storage/'.$HeadingTwo)}}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
@@ -40,9 +42,9 @@
  <div class="section-block-bg" style="background-image: url('img/content/business/bg5.jpg');">
     <div class="container">
        <div class="section-heading text-center">
-          <h3 class="semi-bold font-size-35">Creative solutions, Honey World.</h3>
+          <h3 class="semi-bold font-size-35">{{ $HeadingOne }}.</h3>
           <div class="section-heading-line line-thin"></div>
-          <p>Our objective is to impact the communities we work with by providing them sustainable livelihoods through providing beekeeping training,<br> equipment and advice on modern beekeeping while also assuring them of a ready market for their honey.</p>
+          <p>{{ $ContentOne }}..</p>
        </div>
        <div class="row mt-30">
           <div class="col-md-3 col-sm-12 col-12">
